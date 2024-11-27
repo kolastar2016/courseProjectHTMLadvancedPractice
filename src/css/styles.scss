@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .block {
+    display: flex;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+  
+  .left-column {
+    width: 30%;
+    background-color: #3498db;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .right-column {
+    width: 70%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .btn {
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .comments-button {
+    background-color: #e74c3c;
+  }
+  
+  .favorite-button {
+    background-color: #27ae60;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .comment {
+    background-color: #fff;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .heart-button {
+    position: absolute;
+    right: 25px;
+    bottom: 0px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgba(255, 0, 0, 0.3);
+    transition: color 0.3s ease;
+  }
+  
+  .heart-button.liked {
+    color: rgba(255, 0, 0, 1);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    /* Изменяем контейнер на более компактный для мобильных */
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .block {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .left-column, .right-column {
+      width: 100%;
+    }
+  
+    .btn {
+      font-size: 16px;
+      padding: 15px;
+    }
+  
+    .comments-button, .favorite-button {
+      font-size: 16px;
+      padding: 15px;
+    }
+  
+    .comment {
+      padding: 15px;
+    }
+  
+    .heart-button {
+      font-size: 20px;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .comments-button, .favorite-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .comment {
+      padding: 10px;
+    }
+  
+    .heart-button {
+      font-size: 18px;
+      right: 5px;
+      bottom: 5px;
+    }
+  }
+  
