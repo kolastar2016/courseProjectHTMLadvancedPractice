@@ -1,1 +1,16 @@
-# courseProjectHTMLadvancedPractice
+Запуск:
+Установите зависимости, если они еще не установлены:
+
+npm install
+
+Для сборки в продакшн используйте:
+
+npm run build:prod
+
+Для разработки используйте:
+
+npm run start
+
+Для сборки в режиме разработки:
+
+npm run build:dev
